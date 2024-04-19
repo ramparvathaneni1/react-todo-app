@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import MyList from './MyList';
 import reportWebVitals from './reportWebVitals';
 
+const theList = [
+  "Buy Ice Cream",
+  "Eat Ice Cream",
+  "Go to Gym"
+];
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <MyList theList={theList} />
   </React.StrictMode>
 );
 
